@@ -1,0 +1,50 @@
+{
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite build && vite preview",
+    "lint": "npm run lint:eslint && npm run lint:stylelint",
+    "lint:eslint": "eslint . --ext .ts,.tsx --cache",
+    "lint:stylelint": "stylelint '**/*.css' --cache",
+    "prettier": "prettier --check \"**/*.{ts,tsx}\"",
+    "prettier:write": "prettier --write \"**/*.{ts,tsx}\""
+  },
+  "dependencies": {
+    "@mantine/core": "^7.2.2",
+    "@mantine/hooks": "^7.2.2",
+    "@vitejs/plugin-react": "^4.0.4",
+    "compression": "^1.7.4",
+    "cross-env": "^7.0.3",
+    "cross-fetch": "^4.0.0",
+    "express": "^4.18.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sirv": "^2.0.3",
+    "ts-node": "^10.9.1",
+    "vike": "^0.4.147",
+    "vike-react": "^0.3.5",
+    "vite": "^4.4.9"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@types/compression": "^1.7.2",
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.4.10",
+    "@types/react": "^18.2.20",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.3.0",
+    "@typescript-eslint/parser": "^6.3.0",
+    "eslint": "^8.47.0",
+    "eslint-plugin-react": "^7.33.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "postcss": "^8.4.31",
+    "postcss-preset-mantine": "^1.11.0",
+    "postcss-simple-vars": "^7.0.1",
+    "prettier": "^3.1.0",
+    "stylelint": "^15.11.0",
+    "stylelint-config-standard-scss": "^11.1.0",
+    "typescript": "^5.1.6",
+    "vite-tsconfig-paths": "^4.2.1"
+  }
+}
